@@ -1,0 +1,10 @@
+.flex-container{
+    display: flex;
+
+}
+.eixoy{
+    flex-direction: column;
+}
+.posicao{
+    justify-content: flex-start;
+}
