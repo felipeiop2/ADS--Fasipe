@@ -1,0 +1,13 @@
+.Cabecalho{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.container{
+    background-color: blue;
+    color: white;
+}
+footer{
+    background-color: red;
+    color: black;
+}

@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    height: 200px;
+    border: 2px solid black;
+  }
+
+  .item {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    margin: 10px;
+  }
+
+  /* Exemplo justify-content: flex-start */
+  .flex-start {
+    justify-content: flex-start;
+  }
+
+  /* Exemplo justify-content: flex-end */
+  .flex-end {
+    justify-content: flex-end;
+  }
+
+  /* Exemplo justify-content: space-between */
+  .space-between {
+    justify-content: space-between;
+  }
+
+  /* Exemplo justify-content: space-around */
+  .space-around {
+    justify-content: space-around;
+  }
+
+  /* Exemplo justify-content: space-evenly */
+  .space-evenly {
+    justify-content: space-evenly;
+  }
+
+  /* Exemplo align-items: stretch */
+  .stretch {
+    align-items: stretch;
+  }
+
+  /* Exemplo align-items: flex-start */
+  .flex-start-align {
+    align-items: flex-start;
+  }
+
+  /* Exemplo align-items: flex-end */
+  .flex-end-align {
+    align-items: flex-end;
+  }
+
+  /* Exemplo align-items: center */
+  .center-align {
+    align-items: center;
+  }
+
+  /* Exemplo align-items: baseline */
+  .baseline-align {
+    align-items: baseline;
+  }
