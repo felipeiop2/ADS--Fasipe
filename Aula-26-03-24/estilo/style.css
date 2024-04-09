@@ -1,0 +1,33 @@
+body,
+ p {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: rgb(80, 70, 78);
+    text-align: center;
+ }
+ .principal{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 100px 450px 150px;
+    grid-template-areas: "cabeçalho cabeçalho" "seção barra-lateral" "rodape rodape";
+ }
+ header{
+    grid-area: cabeçalho;
+    background-color: navy;
+ }
+ section{
+    grid-area: seção;
+    background-color: brown;
+
+ }
+aside{
+    grid-area: barra-lateral;
+    background-color: yellow;
+}
+footer{
+    grid-area: rodape;
+}
