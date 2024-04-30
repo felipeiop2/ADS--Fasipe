@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .endereco{
+            background-color: gray;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="retorno">
+    </div>
+    <script>
+        var cep = window.prompt('Digite seu Cep')
+        var url = `https://viacep.com.br/ws/${cep}/json/`;
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", url, false);
+        xhttp.send();
+        var  endereco = JSON.parse(xhttp.responseText)
+        var  enderecohtml = '';
+        enderecohtml += `<p class:"endereco"> Esse é sua rua : ${endereco.logradouro}</p>`
+        enderecohtml += `<p class:"endereco"> Esse é seu bairro : ${endereco.bairro}</p>`
+        enderecohtml += `<p class:"endereco"> Esse é sua cidade : ${endereco.localidade}</p>`
+        enderecohtml += `<p class:"endereco"> Esse é seu estado : ${endereco.uf}</p>`
+        document.getElementById("retorno").innerHTML = enderecohtml;
+    </script>
+</body>
+</html>
