@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Procure seu CEP</h1>
+        <nav>
+            <ul>
+                <li>Menu</li>
+                <li>Sobre Nos</li>
+                <li>Termos</li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Procure Sua localidade</h1>
+        <input type="text" name="cep" id="cep">
+        <button onclick="buscar()">Buscar</button>
+        <div id="res"></div>
+        <script>
+            function buscar(){
+            let cep = window.document.getElementById('cep').value
+            let url = `https://viacep.com.br/ws/${cep}/json/`
+            let xhttp = new XMLHttpRequest()
+            xhttp.open("GET", url, false)
+            xhttp.send()
+            respostaJSON = JSON.parse(xhttp.responseText)
+            console.log(respostaJSON)
+        
+            let res = window.document.getElementById('res')
+            res.innerHTML += `<p>Este é seu bairro ${respostaJSON.logradouro}</p>`
+            res.innerHTML += `<p>Esta é sua cidade ${respostaJSON.localidade}</p>`
+            res.innerHTML += `<p> Este é seu bairro ${respostaJSON.bairro}</P>`
+            res.innerHTML += `<p> Este é seu estado ${respostaJSON.uf}</p>`
+            }
+        </script>
+    </main>
+</body>
+</html>

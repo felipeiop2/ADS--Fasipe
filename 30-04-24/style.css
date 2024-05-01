@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(233, 233, 233);
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    padding: 5px;
+    background-color: #ff4500;
+    border-radius: 10px;
+}
+header ul li{
+    margin: auto;
+    list-style: none;
+    display: inline;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+main{
+    background-color: white;
+    min-width: 500px;
+    min-height: 500px;
+    text-align: center;
+    border-radius: 10px;
+}
+input{
+    border-radius: 10px;
+}
+button{
+    border-radius: 10px;
+}
