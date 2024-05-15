@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="assets/Imagem do WhatsApp de 2024-05-14 à(s) 20.44.13_7896b986.jpg" alt="">
+        </div>
+        <div class="form">
+            <form action="#" name="formulario">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                    <div class="login-button">
+                        <button><a href="#">Entrar</a></button>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firtname">Primeiro Nome</label>
+                        <input id="firtname" type="text" name="firtname" placeholder="Digite seu primeiro nome" required>
+                        <span style="color: red; font-size: 9pt;" id="eNome"></span>
+                    </div>
+                    
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="text" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="number" type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+
+
+                    <div class="input-box">
+                        <label for="confirmpassword">Confirme sua senha</label>
+                        <input id="confirmpassword"type="password" name="confirmpassword" placeholder="Digite sua senha novamente" required>
+                    </div>
+                </div>
+
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Genero</h6>
+                    </div>
+                    <div class="gender-input">
+                        <input id="female" type="radio" name="gender">
+                        <label for="female">Feminino</label>
+                    </div>
+
+                    <div class="gender-input">
+                        <input id="male" type="radio" name="gender">
+                        <label for="male">Masculino</label>
+                    </div>
+
+                    <div class="gender-input">
+                        <input id="others" type="radio" name="gender">
+                        <label for="others">Outros</label>
+                    </div>
+
+                    <div class="gender-input">
+                        <input id="none" type="radio" name="gender">
+                        <label for="none">Prefiro nao dizer</label>
+                    </div>
+                </div>
+              
+                <div class="continue-button">
+                    <button><a href="javascript:validarCampos()">Continuar</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
