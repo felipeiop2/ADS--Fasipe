@@ -31,3 +31,37 @@ aside{
 footer{
     grid-area: rodape;
 }
+@media(max-width : 992px) {
+   .principal{
+       grid-template-columns: 100%;
+       grid-template-areas: "cabecalho cabecalho" "secao barra lateral" "rodape rodape";
+   }
+   footer{
+       display: flex;
+       flex-wrap: wrap;
+       text-align: center;
+   }
+   .parte1, .parte2, .parte3 {
+      margin: 0;
+      border: solid 1px #fff;
+      width: 49%;
+   }
+   .parte2{
+       width: 100%;
+       order: -1;
+   }
+   }
+   @media(max-width : 768px){
+
+      body{
+          margin: 0 15px;
+      }
+  
+      .principal, .parte1, .parte2, .parte3{
+          width: 100%;
+      }
+  
+      .parte2{
+          order: initial;
+      }
+   }
