@@ -39,3 +39,9 @@ body {
 .highlighted-news h5 {
     margin-top: 10px;
 }
+.t{
+    text-align: center;
+}
+.caixa{
+    box-shadow: 5px 2px 2px black;
+}
